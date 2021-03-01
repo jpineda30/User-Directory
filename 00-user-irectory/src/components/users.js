@@ -1,29 +1,11 @@
 import React, { Component } from "react";
 import User from "./user";
-import API from "../utils/app";
 
-class Users extends Component {
 
-  state = {
+function Users (props) {
+
+
     
-    results: []
-
-  };
-
-  // When the component mounts, get a list of all available base breeds and update this.state.breeds
-  componentDidMount() {
-    API.getUsers()
-      .then(res => {
-        this.setState({results: res.data.results });
-        console.log(this.state.results);
-      })
-
-      
-      .catch(err => console.log(err));
-  }
-
-
-    render() {
       return (
         <>
           <div id="body" className="flex-row flex-center p-3 my-3">
@@ -44,8 +26,8 @@ class Users extends Component {
               
               {
 
-                  this.state.results.length > 0 &&
-                  this.state.results.map( (user)=>{
+                  props.data.length > 0 &&
+                  props.data.map( (user)=>{
                       return <User
                       image = {user.picture.thumbnail}
                       key ={user.name.first + user.name.last}
@@ -68,8 +50,8 @@ class Users extends Component {
 
           </div>
         </>
-      );
-    }
+      )
+    
   }
   
   export default Users;
