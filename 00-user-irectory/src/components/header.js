@@ -1,7 +1,30 @@
 import React, { Component } from "react";
+import API from "../utils/app";
 
 class Head extends Component {
-  
+    
+
+
+     searchUsers = async ()=>{
+
+      const results =await API.getUsers()
+        .then(res => {
+          
+            let result = res.data.results;
+            
+            
+         
+            return result;
+
+        })
+
+        
+      return results;  
+        
+    };
+
+
+
     render() {
       return (
         <>
@@ -11,7 +34,7 @@ class Head extends Component {
 
             <div className="semiOrange flex-row flex-center">
                 <input className="p-3 m-3 secFont mx-3" type="text" placeholder="employee"/>
-                <button id="search" className="p-3 secFont">Search</button>
+                <button id="search" className="p-3 secFont" onClick={()=>{this.searchUsers()}}>Search</button>
             </div>
             </header>
         </>

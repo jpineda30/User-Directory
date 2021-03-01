@@ -1,26 +1,27 @@
-import React, { Component } from "react";
+import React from "react";
 
-class User extends Component {
+function User(props){
   
-    render() {
+   
       return (
         <>
 
-            <div class="person flex-row">
-                  <div class="pin"></div>
-                  <div class="pic"></div>
-                  <div class = "std" id="firstName">First Name</div>
-                  <div class = "std" id="lastName">Last Name</div>
-                  <div class = "std" id="eMail">E-mail</div>
-                  <div class = "std" id="phone">Phone</div>
-                  <div class = "std" id="adress">Adress</div>
+            <div className="person flex-row">
+
+                  <div className="pin"></div>
+                  <img alt = "img" src={props.image} className="pic"/>
+                  <div className = "std" id="firstName">{props.name}</div>
+                  <div className = "std" id="lastName">{props.lastName}</div>
+                  <div className = "std" id="eMail">{props.email}</div>
+                  <div className = "std" id="phone">{props.phone}</div>
+                  <div className = "std" id="adress">{props.adress}</div>
                   
               </div>
 
               
         </>
       );
+    
     }
-  }
   
   export default User;
