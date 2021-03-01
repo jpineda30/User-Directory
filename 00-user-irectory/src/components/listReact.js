@@ -1,12 +1,21 @@
 import React, { Component } from "react";
+import Head from "./header";
+import Users from "./users";
 
 class List extends Component {
   
   render() {
     return (
-      <div>
+        <>
+            <Head>
 
-      </div>
+            </Head>
+
+            <Users></Users>
+        </>    
+
+    
+
     );
   }
 }
