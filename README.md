@@ -27,7 +27,7 @@ A web page built with react that shows a set of randomized users and their info 
 <img src="./img/preview2.bmp"/>
 
 Just load the web page and a set of users will be displayed.
-When the user types something in the input field the page will filter the users that contain the characters of the input in: *name, last name or email".
+When the user types something in the input field the page will filter the users that contain the characters of the input in: *name, last name or email*.
 When the user clicks on the search button a new set of users will be loaded.
 
 
