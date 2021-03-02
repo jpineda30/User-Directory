@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Nunito+Sans:wght@600&display=swap');
+
+html{
+    background-color: rgb(0, 0, 0);
+    background-image: url(../img/Savin-NY-Website-Background-Web.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    height: 100vh;
+
+}
+
+body{
+    background:rgba(189, 189, 189, 0.308);
+    height: 100%;
+    
+    
+}
+
+
+
+.mainFont{
+    font-family: 'Exo 2', sans-serif;
+}
+
+.secFont{
+    font-family: 'MuseoModerno', cursive;
+}
+
+
+.buttons{
+   
+    height: 100%;
+    width: 40px;
+    background: rgb(32, 32, 65);
+    color: white;
+    background: rgb(230, 68, 4,.8);
+}
+
+.orange{
+    background: linear-gradient(to bottom, rgb(0, 35, 102),rgb(0, 35, 102),rgb(0, 35, 102),rgb(0,0,0,.78));
+    
+}
+
+.semiOrange{
+    
+    width: 100%;
+    background: rgb(4, 48, 131);
+    
+  
+}
+
+input{
+    border-style: none;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.335),5px 10px 5px rgba(2, 48, 71, 0.301) inset;
+    
+    transition: .3s;
+    border-radius: 30px;
+}
+
+input:hover{
+
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.335);
+    border-style: none;
+    
+}
+
+input:focus{
+    outline: none;
+    border-style: none;
+
+}
+
+button{
+    width: 100px;
+    border-radius: 30px;
+    border-style: none;
+    background: rgb(255, 255, 255);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.335);
+    transition: .3s;
+}
+button:hover{
+    
+    background: radial-gradient(rgb(255, 255, 255),rgba(255, 255, 255, .8)); 
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.335);
+}
+
+.person{
+    
+    background-color: rgba(168, 168, 168, 0.246);
+    transition: .5s;
+    border-bottom: rgba(128, 128, 128, 0.335);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    margin-left: 140px;
+    
+    
+   
+}
+
+.person:hover{
+    
+    background-color: rgb(255, 255, 255);
+    color: rgb(34, 35, 93);
+    position: relative;
+    font-weight: 500;
+    
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    transform: scaleX(1.05);
+    margin-left: 50px;
+
+   
+   
+   
+}
+
+.person:hover .pin{
+   
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    width: 50px;
+    
+    
+    
+   
+}
+
+
+
+.pic{
+    background: black;
+    height: 50px;
+    width: 50px;
+    
+}
+.pin{
+    background: rgb(4, 48, 131);
+    height: 50px;
+    width: 10px;
+    transition: .3s;
+   
+    
+}
+
+.titles{
+    background: linear-gradient(to right,rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.616),white,white,white);
+    height: 30px;
+}
+.titles div, .std{
+    width: 200px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+  
