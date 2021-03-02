@@ -9,10 +9,10 @@
 
 [3-Proyect Usage](##Proyect-Usage)
 
-[7-User info](##User-info)
+[4-User info](##User-info)
 
 
-<img src="./img/preview.bmp"/>
+<img src="./public/img/preview.bmp"/>
 
 ## Proyect Description
 
@@ -24,7 +24,7 @@ A web page built with react that shows a set of randomized users and their info 
 
 ## Proyect Usage
 
-<img src="./img/preview2.bmp"/>
+<img src="./public/img/preview2.bmp"/>
 
 Just load the web page and a set of users will be displayed.
 When the user types something in the input field the page will filter the users that contain the characters of the input in: *name, last name or email*.
