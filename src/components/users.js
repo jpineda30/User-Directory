@@ -8,9 +8,9 @@ function Users (props) {
     
       return (
         <>
-          <div className="flex-row flex-center">
+          <div className="content flex-row flex-center">
 
-            <div className="content flex-col pt-6">
+            <div className="flex-col pt-6">
 
             
               <div className="titles flex-row">

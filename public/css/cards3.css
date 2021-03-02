@@ -13,10 +13,12 @@ html{
 
 body{
     background:rgba(189, 189, 189, 0.308);
-    
+    height: 100%;
     
     
 }
+
+
 
 .mainFont{
     font-family: 'Exo 2', sans-serif;
