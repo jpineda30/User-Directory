@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/User-Directory/static/css/main.cfbe1f08.chunk.css",
+    "main.js": "/User-Directory/static/js/main.02d24d60.chunk.js",
+    "main.js.map": "/User-Directory/static/js/main.02d24d60.chunk.js.map",
+    "runtime-main.js": "/User-Directory/static/js/runtime-main.9234ebd3.js",
+    "runtime-main.js.map": "/User-Directory/static/js/runtime-main.9234ebd3.js.map",
+    "static/js/2.808020ef.chunk.js": "/User-Directory/static/js/2.808020ef.chunk.js",
+    "static/js/2.808020ef.chunk.js.map": "/User-Directory/static/js/2.808020ef.chunk.js.map",
+    "static/js/3.1d29d802.chunk.js": "/User-Directory/static/js/3.1d29d802.chunk.js",
+    "static/js/3.1d29d802.chunk.js.map": "/User-Directory/static/js/3.1d29d802.chunk.js.map",
+    "index.html": "/User-Directory/index.html",
+    "static/css/main.cfbe1f08.chunk.css.map": "/User-Directory/static/css/main.cfbe1f08.chunk.css.map",
+    "static/js/2.808020ef.chunk.js.LICENSE.txt": "/User-Directory/static/js/2.808020ef.chunk.js.LICENSE.txt",
+    "static/media/cards3.css": "/User-Directory/static/media/Savin-NY-Website-Background-Web.e9456f6a.jpg",
+    "static/media/logo.6ce24c58.svg": "/User-Directory/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9234ebd3.js",
+    "static/js/2.808020ef.chunk.js",
+    "static/css/main.cfbe1f08.chunk.css",
+    "static/js/main.02d24d60.chunk.js"
+  ]
+}
