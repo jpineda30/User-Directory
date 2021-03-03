@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import Users from "./users";
 import API from "../utils/app";
+import "../css/cards3.css";
+import "../css/flex-menu3.css";
+import "../css/Scroll.css";
+import "../css/bulma/css/bulma.css";
 
 class List extends Component {
 
@@ -36,6 +40,86 @@ class List extends Component {
     );
 
     console.log(value);
+
+  };
+
+  handleSort = (sort,name) => {
+
+   console.log(sort + name);
+
+   //a.name.first
+    /*if(sort == "↓")
+    {
+      this.setState({temp: this.state.results.sort((a, b) => (a.[name] > b.[name]) ? 1 : -1) });
+    }*/
+
+    switch(name)
+    {
+      case "name.first":
+        if(sort == "↓")
+        {
+          this.setState({temp: this.state.results.sort((a, b) => (a.name.first > b.name.first) ? 1 : -1) });
+        }
+        else
+        {
+          this.setState({temp: this.state.results.sort((a, b) => (a.name.first > b.name.first) ? -1 : 1) });
+        }
+        break;
+
+        case "name.last":
+        if(sort == "↓")
+        {
+          this.setState({temp: this.state.results.sort((a, b) => (a.name.last > b.name.last) ? 1 : -1) });
+        }
+        else
+        {
+          this.setState({temp: this.state.results.sort((a, b) => (a.name.last > b.name.last) ? -1 : 1) });
+        }
+        break;
+
+        case "email":
+          if(sort == "↓")
+          {
+            this.setState({temp: this.state.results.sort((a, b) => (a.email > b.email) ? 1 : -1) });
+          }
+          else
+          {
+            this.setState({temp: this.state.results.sort((a, b) => (a.email > b.email) ? -1 : 1) });
+          }
+          break;
+
+      case "phone":
+        if(sort == "↓")
+        {
+          this.setState({temp: this.state.results.sort((a, b) => (a.phone > b.phone) ? 1 : -1) });
+        }
+        else
+        {
+          this.setState({temp: this.state.results.sort((a, b) => (a.phone > b.phone) ? -1 : 1) });
+        }
+        break;
+
+      case "location":
+          if(sort == "↓")
+          {
+            this.setState({temp: this.state.results.sort((a, b) => (a.location.country > b.location.country) ? 1 : -1) });
+          }
+          else
+          {
+            this.setState({temp: this.state.results.sort((a, b) => (a.location.country > b.location.country) ? -1 : 1) });
+          }
+          break;
+        
+
+        default:
+          break;
+    }
+
+    
+
+    
+
+    
 
   };
 
@@ -88,7 +172,7 @@ class List extends Component {
 
            
 
-            <Users data={this.state.temp} />
+            <Users data={this.state.temp} sort={this.handleSort} />
         </>    
 
     
