@@ -20,7 +20,7 @@ A web page built with react that shows a set of randomized users and their info 
 
 ## Deployed application
 
-[Go to site](https://jpineda30.github.io/User-Directory/)
+[Go to site](https://jpineda30.github.io/User-Directory/index.html)
 
 ## Proyect Usage
 
@@ -29,6 +29,10 @@ A web page built with react that shows a set of randomized users and their info 
 Just load the web page and a set of users will be displayed.
 When the user types something in the input field the page will filter the users that contain the characters of the input in: *name, last name or email*.
 When the user clicks on the search button a new set of users will be loaded.
+
+To order any column just click in the text in the header of the table to order in ascending or desending order.
+
+<img src="./public/img/preview3.bmp"/>
 
 
 ## User info
