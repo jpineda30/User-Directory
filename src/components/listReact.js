@@ -45,9 +45,8 @@ class List extends Component {
 
   handleSort = (sort,name) => {
 
-   console.log(sort + name);
-
-   //a.name.first
+   
+  
     /*if(sort == "↓")
     {
       this.setState({temp: this.state.results.sort((a, b) => (a.[name] > b.[name]) ? 1 : -1) });
